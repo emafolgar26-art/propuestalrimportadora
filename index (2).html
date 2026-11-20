@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Propuesta Bresco Media para Don Raúl</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Archivo:wght@400..700&display=swap">
+<style>
+:root{--bg:#0A0A0D;--bg2:#131318;--bg3:#1B1B22;--fg:#F4F4F7;--mut:#9C9CA8;--line:rgba(255,255,255,.13);--blue:#7FB2E8;--gold:#E8C45C;--wa:#25D366;--d:'Bricolage Grotesque','Archivo',system-ui,sans-serif;--b:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);background:var(--bg)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 var(--b);overflow-x:hidden;padding-bottom:84px;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--bg)}
+p{margin:0}a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px;background:rgba(10,10,13,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top b{font:800 15px var(--d);letter-spacing:.14em}.top b i{font-style:normal;color:var(--gold)}
+.top span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.top a{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:8px 14px;border-radius:99px;white-space:nowrap}
+@media(max-width:560px){.top span{display:none}}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--d);margin:0;letter-spacing:-.02em}
+h1{font-weight:800;font-size:clamp(40px,8.5vw,84px);line-height:.98;margin-top:14px;text-wrap:balance}
+h1 em,h2 em{font-style:italic;font-weight:500;color:var(--gold)}
+h2{font-weight:800;font-size:clamp(30px,5.4vw,52px);line-height:1.02;text-wrap:balance;margin-top:12px}
+.lead{margin-top:18px;max-width:54ch;color:var(--mut);font-size:clamp(16px,1.6vw,19px)}
+.hero{padding:clamp(40px,7vw,84px) 0 clamp(36px,6vw,64px);background:radial-gradient(ellipse at 85% 0,rgba(232,196,92,.14),transparent 55%),radial-gradient(ellipse at 0 100%,rgba(127,178,232,.12),transparent 50%)}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
+@media(min-width:760px){.meta{grid-template-columns:repeat(4,1fr)}}
+.meta .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:5px}
+.meta .v{font-weight:700;font-size:19px;line-height:1.2}.meta .v.g{color:var(--gold)}
+.meta small{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:700 16px var(--b);text-decoration:none;padding:15px 24px;border-radius:99px;background:var(--wa);color:#04210F;border:0;text-align:center}
+.btn.s{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn svg{width:20px;height:20px;fill:currentColor;flex:none}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+section{padding:clamp(52px,8vw,96px) 0}
+.alt{background:var(--bg2)}
+.rows{margin-top:34px;border-top:1px solid var(--line)}
+.row{display:grid;gap:12px 28px;padding:26px 0;border-bottom:1px solid var(--line)}
+@media(min-width:820px){.row{grid-template-columns:70px 1fr 1.25fr}}
+.row .n{font:800 44px/1 var(--d);color:var(--gold)}
+.lab{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+.row p{margin-top:6px;color:var(--mut);font-size:16px}.row p b{color:var(--fg)}
+.row h3{font-size:clamp(22px,2.4vw,28px);line-height:1.12;margin:6px 0 8px}
+.row .con p{color:var(--fg);opacity:.86}
+.plans{display:grid;gap:22px;margin-top:34px}
+@media(min-width:860px){.plans{grid-template-columns:1fr 1fr;align-items:start}}
+.plan{position:relative;border:1px solid var(--line);border-radius:22px;padding:26px 22px;background:linear-gradient(165deg,var(--bg3),var(--bg2))}
+.plan.pro{--c:var(--blue)}.plan.pre{--c:var(--gold);border-color:rgba(232,196,92,.55)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0A0A0D;background:var(--c);padding:5px 11px;border-radius:99px}
+.plan h3{font-size:34px;margin-top:14px;font-weight:600}.plan h3 b{color:var(--c);font-weight:800}
+.was{margin-top:12px;color:var(--mut);font-size:15px}.was s{opacity:.8}.was b{color:var(--c)}
+.price{font:800 clamp(50px,9vw,64px)/1 var(--d);margin-top:6px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.price small{font:500 17px var(--b);color:var(--mut);letter-spacing:0}
+.save{margin-top:8px;font-weight:700;color:var(--c)}
+.fit{margin:16px 0;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--mut);font-size:15.5px}
+.plan ul{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:9px;font-size:15.5px}
+.plan li{padding-left:24px;position:relative}.plan li::before{content:"✓";position:absolute;left:0;color:var(--c);font-weight:800}
+.plan .more{font-weight:700;margin-bottom:10px}
+.no{font-size:14px;color:var(--mut);margin-bottom:18px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.05)}
+.plan .btn{width:100%}
+.terms{display:grid;gap:14px;margin-top:26px}
+@media(min-width:820px){.terms{grid-template-columns:repeat(3,1fr)}}
+.terms div{border:1px solid var(--line);border-radius:16px;padding:18px}
+.terms b{display:block;font:700 18px var(--d);margin:6px 0 4px}.terms p{color:var(--mut);font-size:15px}
+.steps{display:grid;gap:14px;margin-top:32px}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.st{border-top:2px solid var(--gold);padding-top:14px}.st b{display:block;font:700 20px var(--d);margin:4px 0 6px}.st span{color:var(--mut);font-size:15px}
+.note{margin-top:22px;color:var(--mut);font-size:14px}
+.close{text-align:center;max-width:680px;margin:0 auto}
+.close .lead{margin-inline:auto}.close .cta{justify-content:center}
+footer{padding:26px 18px;text-align:center;color:var(--mut);font-size:13px;border-top:1px solid var(--line)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(10,10,13,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(120%);transition:transform .4s}
+.bar.show{transform:none}.bar b{font:800 20px var(--d)}.bar small{display:block;font-size:12px;color:var(--mut)}
+.bar .btn{padding:12px 18px;font-size:15px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style></head><body>
+<header class="top"><b>BRESCO <i>MEDIA</i></b><span>Propuesta · Noviembre 2026</span><a href="#planes">Ver planes</a></header>
+
+<section class="hero" id="s1">
+<div class="wrap">
+<div class="eyebrow">Propuesta para</div>
+<h1>Que lleguen clientes que ya <em>confían en usted.</em></h1>
+<p class="lead">Contenido que muestra cómo trabaja, anuncios que llevan a su WhatsApp y un tablero que le dice cuánto cuesta cada mensaje. Usted sigue haciendo lo que mejor sabe: asesorar.</p>
+<div class="meta">
+<div><div class="k">Preparado para</div><div class="v">Don Raúl<small>Asesoría de importación de vehículos</small></div></div>
+<div><div class="k">Opciones</div><div class="v">Pro o Premium<small>Mes a mes, sin contrato</small></div></div>
+<div><div class="k">Inversión desde</div><div class="v g">Q4,275 / mes<small>con descuento de confirmación</small></div></div>
+<div><div class="k">Vigencia</div><div class="v">Lunes 23 de nov.<small>del descuento</small></div></div>
+</div>
+<div class="cta"><a class="btn" href="#planes">Ver las dos opciones</a><a class="btn s" data-wa="Hola, vi la propuesta de Bresco y tengo una pregunta antes de decidir." href="https://wa.me/50233983698">Tengo una pregunta</a></div>
+</div></section>
+
+<section class="alt" id="cambia"><div class="wrap">
+<div class="eyebrow">Lo que cambia</div>
+<h2>Su negocio ya convence. <em>Falta que más gente lo conozca.</em></h2>
+<div class="rows">
+<div class="row"><div class="n">01</div><div><div class="lab">Hoy</div><p><b>Solo referidos.</b> Ningún cliente le ha escrito por una publicación.</p></div><div class="con"><div class="lab" style="color:var(--gold)">Con Bresco</div><h3>Anuncios a su WhatsApp</h3><p>Meta Ads para quien está pensando en importar y Google Ads para quien ya lo está buscando. Cada anuncio termina en una conversación con usted.</p></div></div>
+<div class="row"><div class="n">02</div><div><div class="lab">Hoy</div><p><b>Su perfil no muestra la confianza que usted da.</b> Los videos son parecidos y usted no sale en ellos.</p></div><div class="con"><div class="lab" style="color:var(--gold)">Con Bresco</div><h3>Contenido de su proceso</h3><p>Cómo revisa un vehículo, qué recomienda según el presupuesto, cómo cuida la inversión del cliente. Sin guion forzado: empezamos por el vehículo y el proceso.</p></div></div>
+<div class="row"><div class="n">03</div><div><div class="lab">Hoy</div><p><b>No se sabe cuánto cuesta conseguir un cliente.</b> Y no quiere mensajes automáticos ni bandeja llena.</p></div><div class="con"><div class="lab" style="color:var(--gold)">Con Bresco</div><h3>Tablero y atención personal</h3><p>Ve en tiempo real cuánto invierte y cuánto cuesta cada persona que le escribe. Su persona de apoyo atiende con trato humano y usted valida.</p></div></div>
+</div></div></section>
+
+<section id="planes"><div class="wrap">
+<div class="eyebrow">Inversión</div>
+<h2>Elija su plan. <em>Decide en un toque.</em></h2>
+<div class="plans">
+
+<article class="plan pro">
+<span class="tag">Pauta y medición</span>
+<h3>Bresco <b>Pro</b></h3>
+<div class="was">Precio regular <s>Q4,500</s> · <b>5% de descuento</b></div>
+<div class="price">Q4,275<small> / mes</small></div>
+<p class="save">Ahorra Q225 cada mes</p>
+<p class="fit">Para empezar a recibir mensajes de interesados con anuncios bien medidos. Usted aporta los videos; nosotros los editamos y los ponemos a trabajar.</p>
+<ul>
+<li>Estrategia de campañas en Meta Ads y Google Ads</li>
+<li>Creación y gestión de hasta 8 campañas activas</li>
+<li>Diseño gráfico profesional y copy de anuncios</li>
+<li>Edición de video con material que usted aporte</li>
+<li>Dashboard en Looker Studio y reporte mensual con análisis</li>
+<li>2 reuniones mensuales de revisión</li>
+<li>Soporte lunes a viernes, 8:00 a 18:00</li>
+<li>WhatsApp directo con su ejecutivo de cuenta</li>
+</ul>
+<p class="no">No incluye manejo de redes ni producción de contenido.</p>
+<a class="btn" data-wa="Hola, soy Raúl. Quiero avanzar con Bresco Pro (Q4,275 al mes). ¿Cómo seguimos?" href="https://wa.me/50233983698"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.1c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.4-.4.4c-.1.1-.3.3-.1.5.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.3.1.8-.1 1.4Z"/></svg>Elegir Pro por WhatsApp</a>
+</article>
+
+<article class="plan pre">
+<span class="tag">Recomendado · todo incluido</span>
+<h3>Bresco <b>Premium</b></h3>
+<div class="was">Precio regular <s>Q7,875</s> · <b>10% de descuento</b></div>
+<div class="price">Q7,087<small>.50 / mes</small></div>
+<p class="save">Ahorra Q787.50 cada mes</p>
+<p class="fit">Resuelve lo que hoy le falta: contenido que muestra su proceso, redes al día y los anuncios que llevan a su WhatsApp, con el equipo completo detrás.</p>
+<p class="more">Todo lo del Pro, más:</p>
+<ul>
+<li>Manejo de Instagram, Facebook y TikTok</li>
+<li>Planificación de contenido mensual</li>
+<li>8 publicaciones al mes programadas en Meta</li>
+<li>4 videos editados al mes</li>
+<li>Producción de fotos y videos cada dos meses</li>
+<li>Canal de WhatsApp con todo el equipo</li>
+<li>Reporte mensual con lectura de métricas y definición de KPIs</li>
+</ul>
+<p class="no">Más de siete personas trabajando en su cuenta: coordinación, community manager, campañas, dirección creativa, producción, diseño y edición.</p>
+<a class="btn" data-wa="Hola, soy Raúl. Quiero avanzar con Bresco Premium (Q7,087.50 al mes). ¿Cómo seguimos?" href="https://wa.me/50233983698"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.1c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.4-.4.4c-.1.1-.3.3-.1.5.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.3.1.8-.1 1.4Z"/></svg>Elegir Premium por WhatsApp</a>
+</article>
+</div>
+
+<div class="terms">
+<div><div class="lab">Contrato</div><b>Mes a mes, sin contrato</b><p>Prueba el servicio un mes y cancela cuando quiera.</p></div>
+<div><div class="lab">Forma de pago</div><b>En dos partes</b><p>50% para iniciar y 50% el 15 de diciembre, después de revisar juntos los primeros resultados.</p></div>
+<div><div class="lab">Pauta aparte</div><b>Q1,000 sugeridos</b><p>Q500 en la quincena y Q500 a fin de mes. Va directo a Meta para que le busquen clientes.</p></div>
+</div>
+<p class="note">Descuento válido al confirmar hasta el lunes 23 de noviembre de 2026.</p>
+</div></section>
+
+<section class="alt" id="empezar"><div class="wrap">
+<div class="eyebrow">Así empezamos</div>
+<h2>Con pautas corriendo <em>antes del aguinaldo.</em></h2>
+<div class="steps">
+<div class="st"><div class="lab">Lun 23 nov</div><b>Confirma</b><span>Primer pago (50%) y arrancamos.</span></div>
+<div class="st"><div class="lab">23 al 25 nov</div><b>Instalamos</b><span>Reunión con el equipo y conocemos su negocio. En Premium, también grabamos su proceso.</span></div>
+<div class="st"><div class="lab">26 y 27 nov</div><b>Activamos</b><span>Salen las primeras pautas, con su WhatsApp como destino.</span></div>
+<div class="st"><div class="lab">15 dic</div><b>Revisamos</b><span>Números del tablero, segundo pago y decisión: seguir, ajustar o subir de plan.</span></div>
+</div>
+<p class="note">Las fechas son metas; si confirma más tarde, se recorren los mismos pasos. No prometemos una cantidad de clientes: prometemos que cada decisión se toma con los números a la vista.</p>
+</div></section>
+
+<section id="cierre"><div class="wrap close">
+<div class="eyebrow">Siguiente paso</div>
+<h2>Un mensaje y <em>arrancamos.</em></h2>
+<p class="lead">Escríbame por WhatsApp con el plan que prefiera, o si todavía tiene una duda, con eso. Con gusto la resolvemos con usted y su esposa.</p>
+<div class="cta"><a class="btn" data-wa="Hola, soy Raúl. Quiero avanzar con Bresco Premium (Q7,087.50 al mes). ¿Cómo seguimos?" href="https://wa.me/50233983698">Aprobar Premium</a><a class="btn" data-wa="Hola, soy Raúl. Quiero avanzar con Bresco Pro (Q4,275 al mes). ¿Cómo seguimos?" href="https://wa.me/50233983698">Aprobar Pro</a><a class="btn s" data-wa="Hola, vi la propuesta de Bresco y tengo una pregunta antes de decidir." href="https://wa.me/50233983698">Tengo una duda</a></div>
+</div></section>
+
+<footer>Propuesta preparada para Don Raúl · Noviembre 2026 · Bresco Media · Guatemala</footer>
+
+<div class="bar" id="bar"><div><b>Q4,275 – Q7,087.50</b><small>al mes · pauta aparte</small></div><a class="btn" data-wa="Hola, vi la propuesta de Bresco y quiero avanzar." href="https://wa.me/50233983698">WhatsApp</a></div>
+
+<script>
+(function(){
+var L="https://wa.me/50233983698?text=";
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=L+encodeURIComponent(a.getAttribute("data-wa"));a.target="_blank";a.rel="noopener"});
+var bar=document.getElementById("bar"),hero=document.getElementById("s1");
+function f(){bar.classList.toggle("show",window.scrollY>hero.offsetHeight*.7)}
+addEventListener("scroll",f,{passive:true});f();
+})();
+</script>
+</body></html>
